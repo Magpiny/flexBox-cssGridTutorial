@@ -118,7 +118,7 @@
        <p>Copyright &copy; <big></big> </p>
      </div>
      <nav class="links">
-         <script>hello</script>
+        
        <ul>
          <li><a href="" class="outline">Home</a></li>
          <li><a href="" class="outline">Tutors</a></li>
@@ -132,11 +132,22 @@
        <a href=""><em class="fab fa-whatsapp fa-2x"></em></a>
      </div>
    </div>
+   <button>TOP</button>
  </footer>
 <script async>
     let bigdate = document.querySelector('big');
     let date = new Date().getFullYear();
     bigdate.innerHTML = date;
+
+    let topPage = document.querySelector('button');
+    function scroll2Top(){
+        window.scrollTo({
+            top: 0,
+            behavior:"smooth"
+        })
+    };
+    
+    topPage.addEventListener("click", scroll2Top);
 </script>
 </body>
 </html>
